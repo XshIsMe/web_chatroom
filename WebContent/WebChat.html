@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>聊天室</title>
+<link rel="Stylesheet" type="text/css" href="css/webchat.css" />
+<script type="text/javascript" src="javascript/webchat.js"></script>
+<script type="text/javascript" src="javascript/webChatList.js"></script>
+</head>
+<body>
+	<div class="box">
+		<textarea id="messageBox" readonly></textarea>
+		<hr />
+		<div class="operation">
+			<input type="radio" name="chatObject" value="publicChat" onclick="changeList('公共聊天室')" checked="checked" />公共聊天室
+			<input type="radio" name="chatObject" value="privateChat" onclick="changeList('私聊')" />私聊
+			<input type="radio" name="chatObject" value="groupChat" onclick="changeList('群聊')" />群聊
+			&nbsp; &nbsp; &nbsp;
+			<select id="friendList"></select>
+			<input type="button" value="发送" class="button" onclick="send()" />
+			<input type="button" value="管理" class="button" onclick="window.open('FriendList.html')"/>
+			<input type="button" value="导出聊天记录" class="button" onclick="save()" />
+			&nbsp; &nbsp; &nbsp;
+			<a href="logout">注销</a>
+		</div>
+		<hr />
+		<textarea id="text"></textarea>
+	</div>
+</body>
+</html>

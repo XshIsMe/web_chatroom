@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>好友列表</title>
+<link rel="Stylesheet" type="text/css" href="css/friendlist.css" />
+<script type="text/javascript" src="javascript/friendList.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="center">
+			<h1 id="userName"></h1>
+			<input type="text" placeholder="修改用户名" id="newUserName" />
+			<input type="button" value="修改" class="button" onclick="changeUserName()" />
+		</div>
+		<br />
+		<div id="friendList" class="center">
+			<h1>好友</h1>
+			<input type="text" placeholder="添加或删除好友" id="friendName" />
+			<input type="button" value="添加" class="button" onclick="addFriend()" />
+			<input type="button" value="删除" class="button" onclick="deleteFriend()" />
+			<br /><br /><br /><br />
+		</div>
+		<div id="groupList" class="center">
+			<h1>群聊</h1>
+			<input type="text" placeholder="添加或删除群" id="groupName" />
+			<input type="button" value="添加" class="button" onclick="addGroup()" />
+			<input type="button" value="删除" class="button" onclick="deleteGroup()" />
+			<br /><br /><br /><br />
+		</div>
+		<div class="center">
+			<h1>邀请好友进群</h1>
+			<input type="text" placeholder="输入群名称" id="inviteGroupName" />
+			<br />
+			<input type="text" placeholder="输入好友名称" id="inviteFriendName" />
+			<br /><br />
+			<input type="button" value="邀请" class="button" onclick="invite()" />
+		</div>
+		<br /><br />
+		<div class="center">
+			<a href="logout">注销</a>
+		</div>
+	</div>
+</body>
+</html>

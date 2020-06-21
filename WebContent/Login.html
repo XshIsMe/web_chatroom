@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="Stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="javascript/idCode.js"></script>
+<script type="text/javascript" src="javascript/checkLogin.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="center">
+			<h1>
+				登录&nbsp;<a href="SignUp.html" class="title">注册</a>
+			</h1>
+		</div>
+		<!-- form action="login?vister=0" method="post" id="form" -->
+			<div class="center">
+				<input type="text" placeholder="邮箱" required="required" id="email" name="email" />
+			</div>
+			<font id="emailTip">&nbsp;</font>
+			<div class="center">
+				<input type="password" placeholder="密码" required="required" id="password" name="password" />
+			</div>
+			<font id="passwordTip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="验证码" required="required" id="idCode" name="idCode" onkeyup="checkIdCode()" />
+				<img src="idCode" onclick="changeImg(this)" />
+			</div>
+			<font id="idCodeTip">&nbsp;</font>
+			<div class="center">
+				<input type="button" value="登录" id="login" class="button" onclick="login()" />
+			</div>
+		<!-- /form -->
+		<div class="center">
+			<br />
+			<a href="Forget.html">忘记密码？</a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="login?action=visit">随便看看</a>
+		</div>
+	</div>
+</body>
+</html>

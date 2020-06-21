@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+<link rel="Stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="javascript/idCode.js"></script>
+<script type="text/javascript" src="javascript/checkSignUp.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="center">
+			<h1>
+				<a href="Login.html" class="title">登录</a>&nbsp;注册
+			</h1>
+		</div>
+		<!-- form action="signUp" method="post" -->
+			<div class="center">
+				<input type="text" placeholder="邮箱" required="required" id="email" name="email" onkeyup="checkEmail()" />
+			</div>
+			<font id="emailTip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="用户名" required="required" id="userName" name="userName" onkeyup="checkUserName()" />
+			</div>
+			<font id="userNameTip">&nbsp;</font>
+			<div class="center">
+				<input type="password" placeholder="密码" required="required" id="password" name="password" onkeyup="checkPassword()" />
+			</div>
+			<font id="passwordTip">&nbsp;</font>
+			<div class="center">
+				<input type="password" placeholder="确认密码" required="required" id="password2" name="password2" onkeyup="checkPassword2()" />
+			</div>
+			<font id="password2Tip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="身份证号码" required="required" id="idCard" name="idCard" onkeyup="checkIdCard()" />
+			</div>
+			<font id="idCardTip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="姓名" required="required" id="name" name="name" onkeyup="checkName()" />
+			</div>
+			<font id="nameTip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="验证码" required="required" id="idCode" name="idCode" onkeyup="checkIdCode()" />
+				<img src="idCode" onclick="changeImg(this)" />
+			</div>
+			<font id="idCodeTip">&nbsp;</font>
+			<div class="center">
+				<input type="button" value="注册" id="signUp" class="button" onclick="signUp()" />
+			</div>
+		<!-- /form -->
+	</div>
+</body>
+</html>

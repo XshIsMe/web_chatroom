@@ -1,0 +1,53 @@
+body{
+	background-color: #B8E5F8;
+	background-image: url(../img/background.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+hr{
+	width:1205px;
+	margin-left:0;
+}
+
+textarea {
+	resize: none;
+	font-size: 18px;
+	width:1200px;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.box{
+	background-color: white;
+	height: auto;
+	width: 1206px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 16px #888888;
+}
+
+.button{
+	background-color: #0084FF;
+	height: 25px;
+	border: none;
+	border-radius: 3px;
+	margin-left:20px;
+	color: white;
+}
+
+#messageBox{
+	height:350px;
+}
+
+#text{
+	height:120px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>找回密码</title>
+<link rel="Stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="javascript/idCode.js"></script>
+<script type="text/javascript" src="javascript/checkForget.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="center">
+			<h1>
+				找回密码
+			</h1>
+		</div>
+		<!-- form action="" method="post" -->
+			<div class="center">
+				<input type="text" placeholder="邮箱" required="required" id="email" name="email" />
+			</div>
+			<font id="emailTip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="身份证号码" required="required" id="idCard" name="idCard" />
+			</div>
+			<font id="idCardTip">&nbsp;</font>
+			<div class="center">
+				<input type="password" placeholder="新密码" required="required" id="password" name="password" />
+			</div>
+			<font id="passwordTip">&nbsp;</font>
+			<div class="center">
+				<input type="text" placeholder="验证码" required="required" id="idCode" name="idCode" onkeyup="checkIdCode()" />
+				<img src="idCode" onclick="changeImg(this)" />
+			</div>
+			<font id="idCodeTip">&nbsp;</font>
+			<div class="center">
+				<input type="button" value="确认" id="forget" class="button" onclick="forget()" />
+			</div>
+		<!-- /form -->
+		<div class="center">
+			<br />
+			<a href="Login.html">返回</a>
+		</div>
+	</div>
+</body>
+</html>
